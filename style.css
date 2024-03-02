@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.distance {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+#my_map {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  height: 60vh;
+  width: 50vw;
+}
+
+#addressForm {
+  margin-top: 1rem;
+}

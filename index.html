@@ -10,16 +10,27 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-    <style>
-        #mi_mapa {
-            height: 400px;
-            width: 600px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    
+    <div class="container">
+      <form id="addressForm">
+        <label for="address">Dirección:</label>
+        <input type="text" id="address" name="address" />
+        <button type="submit">Buscar</button>
+      </form>
 
-    <div id="mi_mapa"></div>
+      <div id="my_map"></div>
+      <div class="distance">
+        <span>Distancia: </span>
+        <span id="distance"></span>
+      </div>
+    </div>
 
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
