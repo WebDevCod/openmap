@@ -66,7 +66,7 @@ function createMap(lat, lon) {
   }).addTo(map);
 
   let myIcon = L.icon({
-    iconUrl: "my-icon.png",
+    iconUrl: "/assets/my-icon.png",
     iconSize: [50, 50],
   });
 
