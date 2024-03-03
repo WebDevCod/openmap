@@ -3,7 +3,6 @@ const form = document.querySelector("#addressForm");
 const latitud = document.querySelector("#latitud");
 const longitud = document.querySelector("#longitud");
 let map = null;
-let distance = null;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -69,7 +68,7 @@ function createMap(lat, lon) {
       map.removeLayer(destPoint);
     }
     destPoint = L.marker(e.latlng).addTo(map);
-    distance = map.distance(refPoint.getLatLng(), destPoint.getLatLng());
+    let distance = map.distance(refPoint.getLatLng(), destPoint.getLatLng());
     let unitMesasure = "m";
     if (distance > 1000) {
       distance = distance / 1000;

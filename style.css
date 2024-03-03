@@ -9,16 +9,19 @@ body {
   font-weight: 100;
   font-style: normal;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .distance {
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 2rem;
 }
+
 #my_map {
   margin-top: 1rem;
   border-radius: 1rem;
@@ -28,6 +31,10 @@ body {
 
 #addressForm {
   margin-top: 2rem;
+}
+
+.latlong {
+  padding: 1rem;
 }
 
 .btnForm {
