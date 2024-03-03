@@ -27,5 +27,36 @@ body {
 }
 
 #addressForm {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+.btnForm {
+  margin-left: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (width <= 400px) {
+  #my_map {
+    height: 70vh;
+    width: 90vw;
+  }
+}
+
+@media (400px <= width <= 800px) {
+  #my_map {
+    height: 70vh;
+    width: 90vw;
+  }
+}
+
+@media (width >= 800px) {
+  #my_map {
+    height: 70vh;
+    width: 90vw;
+  }
 }

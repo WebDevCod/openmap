@@ -1,5 +1,7 @@
 const dist = document.querySelector("#distance");
 const form = document.querySelector("#addressForm");
+const latitud = document.querySelector("#latitud");
+const longitud = document.querySelector("#longitud");
 let map = null;
 
 form.addEventListener("submit", (e) => {
@@ -48,6 +50,8 @@ function createMap(lat, lon) {
     map.remove();
   }
   map = L.map("my_map").setView([lat, lon], 18);
+  latitud.textContent = lat;
+  longitud.textContent = lon;
 
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:

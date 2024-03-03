@@ -17,18 +17,24 @@
     />
   </head>
   <body>
-    
     <div class="container">
       <form id="addressForm">
         <label for="address">Dirección:</label>
         <input type="text" id="address" name="address" />
-        <button type="submit">Buscar</button>
+        <button type="submit" class="btnForm">Buscar</button>
       </form>
 
       <div id="my_map"></div>
       <div class="distance">
         <span>Distancia: </span>
         <span id="distance"></span>
+      </div>
+      <div class="latlong">
+        <span>Latitud: </span>
+        <span id="latitud"></span>
+        <span>/</span>
+        <span>Longitud: </span>
+        <span id="longitud"> </span>
       </div>
     </div>
 
