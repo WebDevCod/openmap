@@ -11,7 +11,7 @@ html {
   font-style: normal;
 }
 
-.container  {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ html {
   outline: none;
 }
 
-.input-container button {
+.input-container .btnForm {
   border-radius: 0 5px 5px 0;
   margin: 0;
   padding: 5px 10px;
@@ -58,7 +58,7 @@ html {
   cursor: pointer;
 }
 
-.input-container button:active {
+.input-container .btnForm:active {
   background-color: #6a0dad;
 }
 
@@ -74,6 +74,19 @@ html {
   padding: 5px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.ubicate {
+  background: transparent;
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.ubicate img {
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (width <= 400px) {

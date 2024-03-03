@@ -2,15 +2,23 @@ const dist = document.querySelector("#distance");
 const form = document.querySelector("#addressForm");
 const latitud = document.querySelector("#latitud");
 const longitud = document.querySelector("#longitud");
+const ubicateBtn = document.querySelector(".ubicate");
+const addressInp = document.querySelector("#address");
 let map = null;
 let destPoint;
 let lat, lon;
+ubicate();
 
-navigator.geolocation.getCurrentPosition((position) => {
-  const lat = position.coords.latitude;
-  const lon = position.coords.longitude;
-  createMap(lat, lon);
-});
+function ubicate() {
+  addressInp.value = "";
+  navigator.geolocation.getCurrentPosition((position) => {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    createMap(lat, lon);
+  });
+}
+
+ubicateBtn.addEventListener("click", ubicate);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
